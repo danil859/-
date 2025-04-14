@@ -1,0 +1,120 @@
+"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио Данила</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="fade-in">Привет, я Данил</h1>
+    <p class="fade-in delay-1">Мне 15 лет, я дизайнер маркетплейсов с опытом 9 месяцев</p>
+    <p class="fade-in delay-2">Работаю в Figma, есть сертификат об обучении</p>
+  </header>
+
+  <main>
+    <section class="links">
+      <a href="https://kwork.ru/user/danil_work900" target="_blank" class="fade-in delay-3">Мой Кворк</a>
+      <a href="https://www.behance.net/eabca060" target="_blank" class="fade-in delay-4">Мой Behance</a>
+    </section>
+  </main>
+
+  <footer class="fade-in delay-5">
+    <p>Связаться со мной:</p>
+    <p>Телеграм: <a href="https://t.me/Exsais" target="_blank">@Exsais</a></p>
+    <p>Телефон: <a href="tel:+79613221949">+7 961 322-19-49</a></p>
+  </footer>
+</body>
+</html>
+"""
+
+# CSS-файл
+css_content = """body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  animation: fadeInPage 1s ease-in;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.fade-in.delay-1 { animation-delay: 0.2s; }
+.fade-in.delay-2 { animation-delay: 0.4s; }
+.fade-in.delay-3 { animation-delay: 0.6s; }
+.fade-in.delay-4 { animation-delay: 0.8s; }
+.fade-in.delay-5 { animation-delay: 1s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
